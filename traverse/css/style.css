@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: 14px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    background: rgb(41, 48, 51);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+}
+
+.bar {
+    width: 25px;
+    display: none;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+.menu a {
+    color: whitesmoke;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+.slider {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: auto;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+#radio5:checked~.first {
+    margin-left: -80%;
+}
+
+.nav-auto div {
+    transition: 1s;
+}
+
+.wrapper {
+    padding: 20px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width:1037px) {
+    .intro h1 {
+        color: orange;
+        font-size: 12px;
+    }
+    header a {
+        font-size: 12px;
+    }
+}
+
+.intro h1,
+span {
+    font-size: 8vmin;
+}
+
+.intro p {
+    width: 90%;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+.service {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+.box {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    margin: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    background: rgb(231, 231, 231);
+    border-radius: 8px;
+}
+
+@media only screen and (max-width:1567px) {
+    .service {
+        width: 80%;
+    }
+    .box {
+        width: 40%;
+    }
+}
+
+.box h2 {
+    font-size: 1vmax;
+}
+
+.box p {
+    text-align: center;
+}
+
+.icon {
+    max-width: 40%;
+    margin-bottom: 10px;
+}

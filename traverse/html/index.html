@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traverse</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../assets/logo.png">
+        <ul class="menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Project</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+        <img class="bar" src="../assets/menu.png">
+
+    </header>
+    <!----------------------------- Slider----------------------------->
+    <div class="flex">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+
+                <div class="slide first">
+                    <img src="../assets/slide.jpg">
+                </div>
+                <div class="slide">
+                    <img src="../assets/slide2.jpg">
+                </div>
+                <div class="slide">
+                    <img src="../assets/slide3.jpg">
+                </div>
+                <div class="slide">
+                    <img src="../assets/slide4.jpg">
+                </div>
+                <div class="slide">
+                    <img src="../assets/slide5.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------- Slider----------------------------->
+    <div class="wrapper">
+        <section class="intro">
+            <h1>Welcome to <span>Travels</span></h1>
+            <p>Alpha Engineering Consultant Pvt. Ltd (Alpha) is a specialised engineering firm established on 23 September 1992 by a group of architects and engineers to provide the expertise and technical knowledge to meet the growing demand for design
+                and construction management services in Nepal. To function effectively, Alpha’s head office at Anamagar, Kathmandu, is adequately staffed with qualified staff from relevant disciplines to deliver on any entrusted assignment. We also have
+                a reliable and efficient manpower with demonstrated experiences in relevant fields. We are a well-equipped engineering consultancy firm. We value our clients and has invested in our staff to help us grow from a novice engineering firm
+                to a valued business now. Alpha has a core team of engineers, architects, project managers, surveyors, overseers, AutoCAD designers, interior designers, quantity surveyors and administrative staff. In addition to regular employees, a team
+                of permanent project-based regular consultants are associated with Alpha to undertake frequent assignments. Alpha also has contracts in place to use services of a large number of resource consultants from relevant disciplines.</p>
+        </section>
+        <section class="service">
+            <div class="box">
+                <img class="icon" src="../assets/icon.jpg">
+                <h2>Concept Design</h2>
+                <p>We are with you from the very beginning. We sit with you for concept design and helping you through land survey, design, tenders etc.</p>
+            </div>
+            <div class="box">
+                <img class="icon" src="../assets/icon2.jpg">
+                <h2>Construction</h2>
+                <p>Certified quality construction with full reporting is provided for peace of mind and accountability</p>
+            </div>
+            <div class="box">
+                <img class="icon" src="../assets/icon3.jpg">
+                <h2>Site supervision</h2>
+                <p>We provide assurance that site work is always supervised for your peace of mind and project management</p>
+            </div>
+            <div class="box">
+                <img class="icon" src="../assets/icon4.jpg">
+                <h2>Project Management</h2>
+                <p>We plan, implement and deliver quality products along with full plans and reporting</p>
+            </div>
+        </section>
+
+    </div>
+
+
+    <script>
+        var counter = 1;
+        setInterval(function() {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 5) {
+                counter = 1;
+            }
+
+        }, 5000);
+    </script>
+</body>
+
+</html>
